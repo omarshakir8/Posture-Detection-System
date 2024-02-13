@@ -1,15 +1,15 @@
-let Dog_img;
+let capture;
 
 
 
 function setup(){
     createCanvas(800,500);
-    Dog_img = loadImage('/Users/omarshakir/Desktop/Posenet/images/Dog.png')
+    capture = createCapture(VIDEO)
 }
 
 
 
 function draw(){
-    image(Dog_img, mouseX, mouseY, 100, 100, 100,100);
+    image(capture,0,0,800,600);
     
 }
