@@ -3,10 +3,19 @@ function setup(){
     console.log('Setup Function');
 }
 
+function getRandomArbitrary(min,max){
+    return Math.random() * (max - min) + min;
+}
+
+
+
 function draw(){
     console.log('Draw Function');
     
-    fill(255);
+    r = getRandomArbitrary(0,255);
+    g = getRandomArbitrary(0,255);
+    b = getRandomArbitrary(0,255);
+    fill(r,g,b);
     ellipse(mouseX, mouseY,50,50);
 
 
