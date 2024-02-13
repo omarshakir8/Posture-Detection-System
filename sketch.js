@@ -1,23 +1,15 @@
+let Dog_img;
+
+
+
 function setup(){
     createCanvas(800,500);
-    console.log('Setup Function');
-}
-
-function getRandomArbitrary(min,max){
-    return Math.random() * (max - min) + min;
+    Dog_img = loadImage('/Users/omarshakir/Desktop/Posenet/images/Dog.png')
 }
 
 
 
 function draw(){
-    console.log('Draw Function');
+    image(Dog_img, mouseX, mouseY, 100, 100, 100,100);
     
-    r = getRandomArbitrary(0,255);
-    g = getRandomArbitrary(0,255);
-    b = getRandomArbitrary(0,255);
-    fill(r,g,b);
-    ellipse(mouseX, mouseY,50,50);
-
-
-
 }
